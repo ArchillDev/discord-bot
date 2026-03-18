@@ -18,6 +18,9 @@ export default {
 	staffOnly: false,
 	run: async (client, interaction) => {
 		try {
+
+			await interaction.deferReply();
+
 			const member = interaction.options.getMember('user') || interaction.member;
 
 			const embed = new EmbedBuilder()
@@ -50,7 +53,7 @@ export default {
 					},
 				);
 
-			await interaction.reply({ embeds: [embed] });
+			await interaction.editReply({ embeds: [embed] });
 		}
 		catch (e) {
 			return await interaction.followUp({

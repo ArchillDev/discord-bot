@@ -1,8 +1,9 @@
 import { EmbedBuilder, ContextMenuCommandBuilder, ApplicationCommandType } from 'discord.js';
+import { stripIndents } from 'common-tags';
 
 export default {
 	data: new ContextMenuCommandBuilder()
-		.setName('Avatar')
+		.setName('avatar')
 		.setType(ApplicationCommandType.User)
 		.setDMPermission(false),
 	contextDescription: 'Fetches the avatar of a user.',
