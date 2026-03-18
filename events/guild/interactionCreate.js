@@ -32,5 +32,16 @@ export default {
 				});
 			}
 		}
+
+		if (interaction.isButton()) {
+			if (interaction.customId === 'verify_user') {
+				const role = interaction.guild.roles.cache.get(client.config.verifiedRoleId);
+				
+				if (!role) return interaction.reply({ content: 'Role tidak ditemukan!', ephemeral: true });
+
+				await interaction.member.roles.add(role);
+				return interaction.reply({ content: 'Kamu berhasil terverifikasi!', ephemeral: true });
+			}
+		}
 	},
 };

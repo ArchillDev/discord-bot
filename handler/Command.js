@@ -22,8 +22,10 @@ export default async (client) => {
 			};
 
 			client.commands.set(cmdSet.name, cmdSet);
+			console.log(`Loading command: ${cmdSet.name}`);
 		}
 	});
 
 	console.log('Slash Commands and Context Menus have now loaded!');
+	
 };

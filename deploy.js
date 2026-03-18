@@ -10,7 +10,7 @@ const deploy = async () => {
 	try {
 		const categories = await fs.readdir('./commands/');
 		const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
-		const clientId = process.env.CLIENT_ID;
+		const guildId = process.env.GUILD_ID;
 
 		for (const category of categories) {
 			const commands = await fs.readdir(`./commands/${category}/`);
@@ -29,7 +29,7 @@ const deploy = async () => {
 		console.log('» Started refreshing Slash Commands and Context Menus...');
 
 		await rest.put(
-			Routes.applicationCommands(clientId),
+			Routes.applicationCommands(guildId),
 			{ body: commandData },
 		);
 
