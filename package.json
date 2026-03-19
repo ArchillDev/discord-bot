@@ -40,10 +40,19 @@
   },
   "dependencies": {
     "@discordjs/rest": "^2.0.1",
+    "@distube/ytdl-core": "^4.16.12",
+    "axios": "^1.13.6",
+    "catbox.moe": "^1.0.2",
+    "child_process": "^1.0.2",
     "common-tags": "^1.8.2",
     "dayjs": "^1.11.9",
     "discord.js": "^14.13.0",
     "dotenv": "^16.0.1",
-    "samp-query": "^0.1.5"
+    "form-data": "^4.0.5",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "samp-query": "^0.1.5",
+    "ytdl-core-muxer": "^1.0.1"
   }
 }
