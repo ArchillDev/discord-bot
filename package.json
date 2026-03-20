@@ -41,6 +41,8 @@
   "dependencies": {
     "@discordjs/rest": "^2.0.1",
     "@distube/ytdl-core": "^4.16.12",
+    "@google/genai": "^1.46.0",
+    "@google/generative-ai": "^0.24.1",
     "axios": "^1.13.6",
     "catbox.moe": "^1.0.2",
     "child_process": "^1.0.2",
@@ -52,6 +54,10 @@
     "fs": "^0.0.1-security",
     "https": "^1.0.0",
     "path": "^0.12.7",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "qs": "^6.15.0",
     "samp-query": "^0.1.5",
     "ytdl-core-muxer": "^1.0.1"
   }
